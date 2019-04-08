@@ -1,13 +1,13 @@
 {
-  "main.css": "/tas/static/css/main.df743141.chunk.css",
-  "main.js": "/tas/static/js/main.af233702.chunk.js",
-  "main.js.map": "/tas/static/js/main.af233702.chunk.js.map",
-  "static/js/1.961b2dcc.chunk.js": "/tas/static/js/1.961b2dcc.chunk.js",
-  "static/js/1.961b2dcc.chunk.js.map": "/tas/static/js/1.961b2dcc.chunk.js.map",
+  "main.css": "/tas/static/css/main.215f533d.chunk.css",
+  "main.js": "/tas/static/js/main.ba5b6883.chunk.js",
+  "main.js.map": "/tas/static/js/main.ba5b6883.chunk.js.map",
+  "static/js/1.958c16a2.chunk.js": "/tas/static/js/1.958c16a2.chunk.js",
+  "static/js/1.958c16a2.chunk.js.map": "/tas/static/js/1.958c16a2.chunk.js.map",
   "runtime~main.js": "/tas/static/js/runtime~main.9edaa45e.js",
   "runtime~main.js.map": "/tas/static/js/runtime~main.9edaa45e.js.map",
-  "static/css/main.df743141.chunk.css.map": "/tas/static/css/main.df743141.chunk.css.map",
+  "static/css/main.215f533d.chunk.css.map": "/tas/static/css/main.215f533d.chunk.css.map",
   "index.html": "/tas/index.html",
-  "precache-manifest.e509fb7d360a31bf597b10ff22a7adac.js": "/tas/precache-manifest.e509fb7d360a31bf597b10ff22a7adac.js",
+  "precache-manifest.ed5bbe01f28dfceaa023a2dbb934b3b0.js": "/tas/precache-manifest.ed5bbe01f28dfceaa023a2dbb934b3b0.js",
   "service-worker.js": "/tas/service-worker.js"
 }
