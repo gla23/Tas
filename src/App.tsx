@@ -20,6 +20,8 @@ import { closeGame, usePage } from "./ducks/navigation";
 import { selectGameDescription } from "./ducks/gameSelectors";
 
 // Make find+recap refs and investigate similar ideas
+//   Choose the words you want to investigate
+// Save redux state on reload? Button to reset to start in case of inconsistency
 // Make modal for "?" with keyboard shortcuts (and later fancy info cards)
 // How to delay finishing the previous one... need to hold it there until the progress bar is done
 // Work out how to get all ESV verses
@@ -30,7 +32,8 @@ export const App = () => {
   const bank = useSelector((state: RootState) => state.bank);
   const page = usePage();
   const [word, setWord] = useState("passed");
-  const [verse, setVerse] = useState("gfr");
+  const [verse, setVerse] = useState("cjH");
+  const [doRecap, setDoRecap] = useState(true);
   const passage = new Passage(verse || "t");
   const newVerseIndex = Object.keys(bank).indexOf(verse);
   const [findWords, setFindWords] = useState("");
@@ -93,6 +96,7 @@ export const App = () => {
               questionIndex: 0,
               queue: findWords ? findWords.split(" ") : [],
               found: [],
+              doRecap,
             },
             filterOf(e)
           )
@@ -103,9 +107,16 @@ export const App = () => {
       <br />
       starting with:{" "}
       <input
-        type="text mt-8"
+        type="text"
         value={findWords}
         onChange={(e) => setFindWords(e.target.value)}
+      />
+      <br />
+      recap after:{" "}
+      <input
+        type="checkbox"
+        checked={doRecap}
+        onChange={(e) => setDoRecap(e.target.checked)}
       />
       <br />
       <div className="mt-6"></div>
@@ -156,6 +167,7 @@ export const App = () => {
                   questionIndex: 0,
                   queue: verseWords(bank[verse]),
                   found: [],
+                  doRecap,
                 },
                 "^" + passage.book.shortcut
               )
